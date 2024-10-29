@@ -109,34 +109,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  	  	  sConfigPrivate.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-	  	  	  sConfigPrivate.Rank = 1;
 
-	 	  	  sConfigPrivate.Channel = ADC_CHANNEL_9;
-	 	      HAL_ADC_ConfigChannel(&hadc1, &sConfigPrivate);
-	 	  	  HAL_ADC_Start(&hadc1);
-	 	  	  HAL_ADC_PollForConversion(&hadc1,1000);
-	 	  	  readValue1 = HAL_ADC_GetValue(&hadc1);
-	 	  	  HAL_ADC_Stop(&hadc1);
-
-	 	  	  sConfigPrivate.Channel = ADC_CHANNEL_8;
-	 	  	  HAL_ADC_ConfigChannel(&hadc1, &sConfigPrivate);
-	 	  	  HAL_ADC_Start(&hadc1);
-	 	  	  HAL_ADC_PollForConversion(&hadc1,1000);
-	 	  	  readValue2 = HAL_ADC_GetValue(&hadc1);
-	 	  	  HAL_ADC_Stop(&hadc1);
-
-
-
-	 	  	  PWM1 = readValue1/7;
-	 	  	  PWM2 = readValue2/7;
-
-
-	 	  	  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2, PWM1);
-	 	  	  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3, PWM2);
-
-
-	 	  	  HAL_Delay(10);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
