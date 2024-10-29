@@ -95,13 +95,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-	  	  	  HAL_Delay(500);
+	  HAL_Delay(500);
 
-	  	  	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
-	  	  	  HAL_Delay(500);
-
+	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
+	  HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -143,7 +141,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3) != HAL_OK)
