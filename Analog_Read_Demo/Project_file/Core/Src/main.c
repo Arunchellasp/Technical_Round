@@ -52,6 +52,12 @@ uint16_t readValue2;
 uint16_t PWM1;
 uint16_t PWM2;
 
+uint16_t voltage1_mV;
+uint16_t voltage2_mV;
+
+float voltage1;
+float voltage2;
+
 ADC_ChannelConfTypeDef sConfigPrivate = {0};
 
 /* USER CODE END PV */
@@ -131,7 +137,14 @@ int main(void)
 	 	  	 	  	  readValue2 = HAL_ADC_GetValue(&hadc1);
 	 	  	 	  	  HAL_ADC_Stop(&hadc1);
 
+	 	  	 	   // Convert ADC values to millivolts
+	 	  	 	    voltage1_mV = (readValue1 * 3300) / 4095;
+	 	  	 	    voltage2_mV = (readValue2 * 3300) / 4095;
 
+
+	 	  	 	   // Convert millivolts to volts
+	 	  	 	    voltage1 = voltage1_mV / 1000.0;
+	 	  	 	    voltage2 = voltage2_mV / 1000.0;
 
 	 	  	 	  	  PWM1 = readValue1/7;
 	 	  	 	  	  PWM2 = readValue2/7;

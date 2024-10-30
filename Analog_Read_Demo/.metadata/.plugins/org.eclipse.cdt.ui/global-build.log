@@ -490,3 +490,80 @@ arm-none-eabi-size  Project_file.elf
   11892	     12	   1740	  13644	   354c	Project_file.elf
 Finished building: default.size.stdout
  
+04:51:19 **** Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Project_file.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Chellapandi\Desktop\ARUN\Software\STM32\AiDen_Technical_Round\Analog_Read_Demo\Project_file\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_file.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project_file.elf
+ 
+arm-none-eabi-size  Project_file.elf 
+arm-none-eabi-objdump -h -S Project_file.elf  > "Project_file.list"
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project_file.list
+ 
+04:51:54 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-size  Project_file.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+05:07:01 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-size  Project_file.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+05:37:31 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-size  Project_file.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+16:08:50 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-size  Project_file.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+16:09:19 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-size  Project_file.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11892	     12	   1740	  13644	   354c	Project_file.elf
+Finished building: default.size.stdout
+ 
+16:11:51 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Project_file.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Chellapandi\Desktop\ARUN\Software\STM32\AiDen_Technical_Round\Analog_Read_Demo\Project_file\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_file.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project_file.elf
+ 
+arm-none-eabi-size  Project_file.elf 
+arm-none-eabi-objdump -h -S Project_file.elf  > "Project_file.list"
+   text	   data	    bss	    dec	    hex	filename
+  11972	     12	   1748	  13732	   35a4	Project_file.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project_file.list
+ 
+16:16:54 **** Incremental Build of configuration Debug for project Project_file ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Project_file.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Chellapandi\Desktop\ARUN\Software\STM32\AiDen_Technical_Round\Analog_Read_Demo\Project_file\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project_file.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project_file.elf
+ 
+arm-none-eabi-size  Project_file.elf 
+arm-none-eabi-objdump -h -S Project_file.elf  > "Project_file.list"
+   text	   data	    bss	    dec	    hex	filename
+  14168	     12	   1756	  15936	   3e40	Project_file.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project_file.list
+ 

@@ -1,2 +1,5 @@
 count
 PWM1
+PWM2
+readValue1
+readValue2
